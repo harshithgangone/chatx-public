@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  box-sizing: border-box;
+}
+::-webkid-scrollbar{
+  display: none;
+}
+
+img.dot{
+  width: 15px !important;
+}
+.mobiletext{
+  display: none;
+}
+@media (max-width:900px) {
+  .hidden{
+    display: none;
+  }
+}
+/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px;  /* width for vertical scrollbar */
+  height: 10px; /* height for horizontal scrollbar */
+}
+
+/* Style for the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #001F3F}/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+    width: 10px;  /* width for vertical scrollbar */
+    height: 10px; /* height for horizontal scrollbar */
+}
+
+/* Style for the scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #3A6D8C;  /* light grey background */
+}
+
+/* Style for the scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #001F3F;  /* dark grey */
+    border-radius: 5px; /* rounded corners */
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #001F3F;  /* darker grey on hover */
+}
+;  /* light grey background */
+
+/* Style for the scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #001F3F;  /* dark grey */
+  border-radius: 5px; /* rounded corners */
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #001F3F;  /* darker grey on hover */
+}
+
+

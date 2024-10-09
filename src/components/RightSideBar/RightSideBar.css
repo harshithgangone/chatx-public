@@ -1,0 +1,212 @@
+.rs{
+    color: white;
+    background: #001030;
+    position: relative;
+    height: 75vh;
+    overflow-y: scroll;
+}
+.rs-profile{
+    padding-top: 60px;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+}
+.rs-profile img{
+    width: 110px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.rs-profile h3{
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 0px;
+}
+.rs-profile p{
+    font-size: 10px;
+    opacity: 80%;
+    font-weight: 300;
+}
+.rs hr{
+    border-color: #ffffff50;
+    margin: 15px 0px;
+}
+.rs-media{
+    padding: 0px 20px;
+    font-size: 14px;
+}
+.rs-media div{
+    max-height: 180px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 8px;
+}
+.rs-media div img{
+    width: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rs button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #077eff;
+    color:white;
+    border: none;
+    font-size:12px ;
+    font-weight: 300;
+    padding: 10px 65px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.no-media{
+    text-align: center;
+    color: red;
+    place-self: center;
+}
+.arrow{
+    display: none;
+}
+@media (max-width: 900px) {
+    .arrow{
+        display: block;
+        width: 30px;
+        margin: 15px;
+    }
+    /* Main container for the right sidebar */
+    .rs {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #001030; /* Light background for better readability */
+        padding: 0; /* No padding for the main container */
+        box-sizing: border-box;
+    }
+
+    /* Profile section (user avatar, name, status) */
+    .rs-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align items */
+        padding: 10px; /* Less padding for compactness */
+        background-color: #3A6D8C;
+        border-radius: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+        position: relative; /* For absolute positioning of the logout button */
+    }
+
+    /* Sub-profile section (arrow, avatar, name, status) */
+    .sub-profile {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        
+        justify-content: space-between;
+        margin-bottom: 10px; /* Add margin below for spacing */
+    }
+
+    
+
+    /* Avatar styling */
+    .sub-profile .avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%; /* Circular avatar */
+        object-fit: cover;
+    }
+
+    /* User info (name and online status) */
+    .sub-profile h3 {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        flex-grow: 1; /* Fill available space */
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    /* Online status dot */
+    .dot {
+        width: 10px;
+        height: 10px;
+        margin-right: 8px;
+    }
+
+    /* User bio section */
+    .rs-profile p {
+        font-size: 14px;
+        color: white;
+        margin-top: 5px; /* Less margin for compactness */
+        text-align: center;
+    }
+
+    /* Media section */
+    .rs-media {
+        margin-top: 15px; /* Small margin to separate from profile */
+        padding: 10px; /* Padding for media section */
+        background-color: #3A6D8C;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        flex-grow: 1; /* Allow media section to grow and take available space */
+        display: flex;
+        flex-direction: column; /* Align media content vertically */
+        align-items: center; /* Center-align media items */
+    }
+
+    /* Media header */
+    .rs-media p {
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+        text-align: center; /* Center text */
+    }
+
+    /* Media images */
+    .rs-media img {
+        width: 80px; /* Adjusted size for better mobile fit */
+        height: 80px;
+        border-radius: 8px;
+        margin: 5px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    /* No media text */
+    .no-media {
+        color: #999;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    /* Logout button styling */
+    .rs-media button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #001030;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 15px; /* Small margin above logout button */
+    }
+
+    .rs-media button:hover {
+        background-color: #001030; /* Darken on hover */
+    }
+
+    /* Hide the "start" container when chat or profile is open */
+    .start {
+        display: none;
+    }
+}
